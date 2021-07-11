@@ -81,6 +81,32 @@
             }
         }
 
+        @media (max-width: 1000px) {
+            .intro-post-body .card-title {
+                font-size: 40px;
+                margin-bottom: 24px;
+            }
+
+            .intro-post-body .card-text {
+                font-size: 38px;
+            }
+
+            .about-me-img {
+                border-radius: 50%;
+                height: 320px;
+                width: 320px;
+                top: 0px!important;
+                right: 0px!important;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            .profile-img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
         .nav-item a, .navbar-brand {
             font-size: 18px;
             font-weight: 600;
@@ -88,9 +114,9 @@
         }
 
         .our-services-inner img {
-            width: 240px;
-            height: 240px;
-            align-self: center;
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
         }
 
         .our-services-inner .card {
@@ -101,6 +127,27 @@
             transform: translateY(-5px);
             /*box-shadow: 0px 10px 20px rgb(0 0 0 / 8%);*/
             box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        }
+
+        .img-1 {
+            
+        }
+
+        .row-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+            grid-column-gap: 10px;
+            grid-row-gap: 50px;
+        }
+
+
+        .card-img-overlay-bottom {
+            position: absolute;
+            /* top: 0; */
+            right: 0;
+            bottom: -1px;
+            left: 0;
+            padding: 1rem;
         }
 
     </style>
@@ -167,7 +214,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <img src="images/profile0_nobg.png" class="" style="width: 100%;" alt="...">
+                            <img src="images/profile0_nobg.png" class="profile-img" style="width: 100%;" alt="...">
                         </div>
                     </div>
 
@@ -179,7 +226,7 @@
             <div class="container">
                 <div class="about-me-inner">
 
-                    <div class="row g-0">
+                    <div class="row g-0" style="align-items: center;">
                         <div class="col-md-6" style="position: relative;">
                             <img src="images/profile3.jpg" class="img-fluid about-me-img" style="border-radius: 50%;" width="420px" height="420px" alt="...">
                             <div class="about-me-img" style="border-radius: 50%; background-color: #ff69b4; position: absolute; top: 40px; right: 100px; z-index: -1;" width="420px" height="420px"></div>
@@ -209,10 +256,6 @@
                 <div class="our-services-header-inner">
                     <center>
                         <h1>Our Services</h1>
-                        <br>
-                        <h3>
-                            Customer service is important because it sets your business apart from competitors. It can make people loyal to your brand, products, and services for years to come. In fact, 77% of customers say they're more loyal to businesses that offer top-notch service, according to our Trends Report.
-                        </h3>
                     </center>
                 </div>
             </div>
@@ -233,58 +276,58 @@
                             Wedding
                         -->
 
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="row-grid">
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/birthday.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Birthday Parties</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card bg-dark text-white">
+                                    <img src="images/birthday1.png" class="card-img img-1" alt="...">
+                                    <div class="card-img-overlay-bottom">
+                                        <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Birthday</span> </h2>
+                                        <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/baby-shower.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Baby Shower</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card bg-dark text-white">
+                                    <img src="images/baby-shower1.png" class="card-img-top" alt="...">
+                                    <div class="card-img-overlay-bottom">
+                                        <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Baby Shower</span> </h2>
+                                        <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/anniversary.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Anniversaries</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card bg-dark text-white">
+                                    <img src="images/anniversary1.png" class="card-img-top" alt="...">
+                                    <div class="card-img-overlay-bottom">
+                                        <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Anniversaries</span> </h2>
+                                        <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/proposal.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Proposals</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card bg-dark text-white">
+                                    <img src="images/proposal1.png" class="card-img-top" alt="...">
+                                    <div class="card-img-overlay-bottom">
+                                        <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Proposals</span> </h2>
+                                        <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/anniversary.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Personal Event</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card bg-dark text-white">
+                                    <img src="images/personal_events1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-img-overlay-bottom">
+                                        <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Personal Events</span> </h2>
+                                        <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <img src="images/wedding.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Wedding</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card bg-dark text-white">
+                                    <img src="images/wedding1.png" class="card-img-top" alt="...">
+                                    <div class="card-img-overlay-bottom">
+                                        <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Weddings</span> </h2>
+                                        <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
                                     </div>
                                 </div>
                             </div>
