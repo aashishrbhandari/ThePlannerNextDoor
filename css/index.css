@@ -186,8 +186,6 @@ body {
         border-radius: 50%;
         height: 320px;
         width: 320px;
-        top: 0px!important;
-        right: 0px!important;
         object-fit: cover;
         object-position: top;
     }
@@ -195,6 +193,15 @@ body {
     .profile-img {
         height: 100%;
         object-fit: contain;
+    }
+
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
     }
 }
 
