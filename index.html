@@ -16,225 +16,13 @@
 
     <link rel="shortcut icon" type="image/jpg" href="images/event_planner.png"/>
 
-    <style>
-
-        .card {
-            border-radius: 0;
-            border: none!important;
-        }
-
-        .intro-post, .our-services-header {
-            background-color: #ff69b4;
-            background-position: 50% 50%;
-        }
-
-        nav {
-            /*background-color: #ff69b9!important;*/
-        }        
-
-        .intro-post-body {
-            color: #fff;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .about-me-inner-body {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .intro-post-body .card-title {
-            font-size: 70px;
-            margin-bottom: 24px;
-        }
-
-        .intro-post-body .card-text {
-            font-size: 38px;
-        }
-
-        .about-me-img {
-            border-radius: 50%;
-            height: 420px;
-            width: 420px;
-            object-fit: cover;
-            object-position: top;
-        }
-
-        @media (max-width: 600px) {
-            .intro-post-body .card-title {
-                font-size: 40px;
-                margin-bottom: 24px;
-            }
-
-            .intro-post-body .card-text {
-                font-size: 38px;
-            }
-
-            .about-me-img {
-                border-radius: 50%;
-                height: 300px;
-                width: 300px;
-                top: 0px!important;
-                right: 0px!important;
-                object-fit: cover;
-                object-position: top;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            .intro-post-body .card-title {
-                font-size: 40px;
-                margin-bottom: 24px;
-            }
-
-            .intro-post-body .card-text {
-                font-size: 38px;
-            }
-
-            .about-me-img {
-                border-radius: 50%;
-                height: 320px;
-                width: 320px;
-                top: 0px!important;
-                right: 0px!important;
-                object-fit: cover;
-                object-position: top;
-            }
-
-            .profile-img {
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-
-        .nav-item a, .navbar-brand {
-            font-size: 18px;
-            font-weight: 600;
-            /*color: #fff!important;*/
-        }
-
-        .our-services-inner img {
-            width: 100%;
-            height: 340px;
-            object-fit: cover;
-        }
-
-        .our-services-inner .card {
-            transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
-        }
-
-        .our-services-inner .card:hover {
-            transform: translateY(-5px);
-            /*box-shadow: 0px 10px 20px rgb(0 0 0 / 8%);*/
-            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
-        }
-
-        .row-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
-            grid-column-gap: 10px;
-            grid-row-gap: 50px;
-        }
-
-
-        .card-img-overlay-bottom {
-            position: absolute;
-            /* top: 0; */
-            right: 0;
-            bottom: -1px;
-            left: 0;
-            padding: 1rem;
-        }
-
-
-        .btn-pink {
-            background-color: #ff69b4!important; 
-            border-color: #ff69b4!important;
-        }
-
-        .btn-outline-pink {
-            color: #ff69b4; 
-            border-color: #ff69b4!important;
-        }
-
-        .btn-outline-pink:hover {
-            color: #fff;
-            background-color: #ff69b4!important; 
-            border-color: #ff69b4!important;
-        }
-
-        .modal-content {
-            border: none;
-            border-radius: unset;
-        }
-
-        .modal-header, .modal-body {
-            padding: 0.8rem;
-        }
-
-        /*** Whats App ***/
-
-
-        .whatsapp-float-btn {
-            position: fixed; /* Very Crucial */
-            width: 320px;
-            height: 60px;
-            left: 18px; 
-            bottom: 40px;
-            z-index: 3;
-            display: flex; /* Make It FlexBox */
-        }
-
-        .whatsapp-float-btn-icon {
-            height: 64px;
-            width: 64px;
-            bottom: 36px;
-            border-radius: 50%;
-        }
-
-        .whatsapp-float-btn-text {
-            padding-left: 6px;
-            font-size: 16px;
-            color: #000000;
-        }
-
-        .whatsapp-float-btn-text:hover {
-            background-color: #fff!important;
-            color: #000!important;
-        }
-
-
-
-        .whatsapp-float-btn, .whatsapp-float-btn * {
-            transition: all 0.4s ease;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-30px);}
-            60% {transform: translateY(-15px);}
-        }
-
-        .whatsapp-float-btn {
-            animation: bounce 1.6s infinite;
-        }
-
-
-        /********* ******/
-
-    </style>
-
     <title>ThePlannerNextDoor</title>
   </head>
   <body>
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-rblue">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
                     <b>The</b>
@@ -286,7 +74,7 @@
 
     <main>
 
-        <div class="intro-post">
+        <div class="intro-post bg-rblue">
             <div class="container">
                 <div class="intro-post-inner">
 
@@ -296,13 +84,13 @@
                                 <div class="card-body">
                                     <img src="images/party.png" height="100" width="100" alt="">
                                     <h1 class="card-title">Let's plan your next event together.</h1>
-                                    <a href="#our-services" class="btn btn-light">Check Our Services</a>
-                                    <a href="#" class="btn btn-pink shadow text-white" data-bs-toggle="modal" data-bs-target="#show-left-todo">Contact Me</a>
+                                    <a href="#our-services" class="btn btn-outline-rblue shadow">Check Our Services</a>
+                                    <a href="#" class="btn btn-rblue shadow text-white" data-bs-toggle="modal" data-bs-target="#show-left-todo">Contact Me</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <img src="images/profile0_nobg.png" class="profile-img" style="width: 100%;" alt="...">
+                            <img src="images/profile12-nobg.png" class="profile-img" style="width: 100%;" alt="...">
                         </div>
                     </div>
 
@@ -317,18 +105,20 @@
                     <div class="row g-0" style="align-items: center;">
                         <div class="col-md-6" style="position: relative;">
                             <img src="images/profile3.jpg" class="img-fluid about-me-img" style="border-radius: 50%;" width="420px" height="420px" alt="...">
-                            <div class="about-me-img" style="border-radius: 50%; background-color: #ff69b4; position: absolute; top: 0px; right: 100px; z-index: -1;" width="420px" height="420px"></div>
+                            <div class="about-me-img bg-rblue" style="border-radius: 50%; position: absolute; top: 0px; right: 80px; z-index: -1;" width="420px" height="420px"></div>
                         </div>
                         <div class="col-md-6">
                             <div class="about-me-inner-body">
                                 <div class="card-body">
-                                    <h1 class="card-title">Meet Deepti,</h1>
-                                    <h3 style="margin-bottom: 12px;">Hi! I am a Professional Dreamer and I love to Plan Events.</h3> 
-                                    <p class="card-text" style="font-size: 20px;">
-                                        My Goal is to keep you calm and collected throughout the process of the event, also on the big day by creating an environment of patience, positivity and joy. <br>
+                                    <span class="card-title h1" style="margin-bottom: 28px; border-bottom: 10px solid var(--royal-blue); display: inline-block;">Meet Deepti,</span>
+                                    <h3 style="margin-bottom: 12px;">Hi I am a Professional Dreamer and I love to Plan Events.</h3> 
+                                    <p class="" style="font-size: 20px;">
+                                        My Goal is to keep you calm and collected throughout the process of the event, also on the big day by creating an environment of patience, positivity and joy.
+                                    </p>
+                                    <p class="card-text" style="font-size: 20px; margin-bottom: 60px;">
                                         I Strive to be compassionate, kind and creative and to anticipate your needs and deliver results
                                     </p>
-                                    <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                    <button class="btn btn-rblue">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -338,8 +128,54 @@
             </div>
         </div>
 
+        <div id="our-recent-events" class="our-services-header bg-rblue" style="padding: 40px 0px; color: #fff;">
+            <div class="container">
+                <div class="our-recent-events-header-inner">
+                    <center>
+                        <h1>Recent Events</h1>
+                    </center>
+                </div>
+            </div>
+        </div>
 
-        <div id="our-services" class="our-services-header" style="padding: 40px 0px; color: #fff;">
+        <div class="our-recent-events" style="padding: 40px 0px;">
+            <div class="container">
+                <div class="our-recent-events-inner">
+                    
+                    <div class="row-grid">
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="images/events/parties/party1-la_casa_de_papel/1.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="images/events/parties/party1-la_casa_de_papel/3.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="images/events/parties/party1-la_casa_de_papel/5.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="images/events/parties/party1-la_casa_de_papel/6.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="our-services" class="our-services-header bg-rblue" style="padding: 40px 0px; color: #fff;">
             <div class="container">
                 <div class="our-services-header-inner">
                     <center>
@@ -355,15 +191,6 @@
                     
                     <div>
 
-                        <!--
-                            Birthday parties
-                            Baby shower
-                            Anniversaries
-                            Proposals
-                            Personal event
-                            Wedding
-                        -->
-
                         <div class="row-grid-nope row" data-masonry='{"percentPosition": true }'>
                             <div class="col-sm-6 col-lg-4 mb-4">
                                 <div class="holder1" style="position: relative;">
@@ -371,12 +198,10 @@
                                         <img src="images/birthday1.png" class="card-img img-1" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Birthday</span> </h2>
-                                            <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                            <button class="btn btn-rblue">Read More</button>
                                         </div>
                                     </div>
-                                    <div class="card text-white h-100 w-100" style="background-color: #ff69b4; border-color: #ff69b4; position: absolute; z-index: -1; left: -10px; bottom: -10px;">
-                                            
-                                    </div>
+                                    <div class="color-shadow-left"></div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4 mb-4">
@@ -385,12 +210,10 @@
                                         <img src="images/baby-shower1.png" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Baby Shower</span> </h2>
-                                            <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                            <button class="btn btn-rblue">Read More</button>
                                         </div>
                                     </div>
-                                    <div class="card text-white h-100 w-100" style="background-color: #ff69b4; border-color: #ff69b4; position: absolute; z-index: -1; left: -10px; bottom: -10px;">
-                                            
-                                    </div>
+                                    <div class="color-shadow-left"></div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4 mb-4">
@@ -399,12 +222,10 @@
                                         <img src="images/anniversary1.png" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Anniversaries</span> </h2>
-                                            <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                            <button class="btn btn-rblue">Read More</button>
                                         </div>
                                     </div>
-                                    <div class="card text-white h-100 w-100" style="background-color: #ff69b4; border-color: #ff69b4; position: absolute; z-index: -1; left: -10px; bottom: -10px;">
-                                        
-                                    </div>
+                                    <div class="color-shadow-left"></div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4 mb-4">
@@ -413,12 +234,10 @@
                                         <img src="images/proposal1.png" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Proposals</span> </h2>
-                                            <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                            <button class="btn btn-rblue">Read More</button>
                                         </div>
                                     </div>
-                                    <div class="card text-white h-100 w-100" style="background-color: #ff69b4; border-color: #ff69b4; position: absolute; z-index: -1; left: -10px; bottom: -10px;">
-                                        
-                                    </div>
+                                    <div class="color-shadow-left"></div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4 mb-4">
@@ -427,12 +246,10 @@
                                         <img src="images/personal_events1.jpg" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Personal Events</span> </h2>
-                                            <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                            <button class="btn btn-rblue">Read More</button>
                                         </div>
                                     </div>
-                                    <div class="card text-white h-100 w-100" style="background-color: #ff69b4; border-color: #ff69b4; position: absolute; z-index: -1; left: -10px; bottom: -10px;">
-                                        
-                                    </div>
+                                    <div class="color-shadow-left"></div>
                                 </div>
                                 
                             </div>
@@ -442,12 +259,10 @@
                                         <img src="images/wedding1.png" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Weddings</span> </h2>
-                                            <button class="btn btn-dark" style="background-color: #ff69b4; border-color: #ff69b4;">Read More</button>
+                                            <button class="btn btn-rblue">Read More</button>
                                         </div>
                                     </div>
-                                    <div class="card text-white h-100 w-100 shadow" style="background-color: #ff69b4; border-color: #ff69b4; position: absolute; z-index: -1; left: -10px; bottom: -10px;">
-                                        
-                                    </div>
+                                    <div class="color-shadow-left"></div>
                                 </div>
                             </div>
                         </div>
