@@ -6,38 +6,40 @@ body {
 
 :root {
     --royal-blue: #4169e1;
+    --space-blue: #1E2952;
+    --space-blue-2: #243263;
     --royal-blue-dark: #2352df;
     --pinky-pink: #ff69b4;
 }
 
 .bg-rblue {
-    background-color: #4169e1!important;
+    background-color: var(--space-blue)!important;
 }
 
 .text-rblue {
-    color: #4169e1!important;
+    color: var(--space-blue)!important;
 }
 
 .btn-rblue {
     color: #fff;
-    background-color: #4169e1;
-    border-color: #4973f3;
+    background-color: var(--space-blue);
+    border-color: var(--space-blue-2);
 }
 
 .btn-outline-rblue {
-    color: #4169e1;
-    border-color: #4973f3;
+    color: var(--space-blue);
+    border-color: var(--space-blue-2);
     background-color: #fff;
 }
 /**
 .btn-outline-rblue:hover {
     color: #fff;
-    background-color: #4169e1;
+    background-color: var(--space-blue);
     border-color: #4973f3;
 }
 
 .btn-rblue:hover {
-    color: #4169e1!important; 
+    color: var(--space-blue)!important; 
     background-color: #fff;
     border-color: #4973f3;
 }
@@ -247,8 +249,8 @@ body {
     color: #fff;
     height: 100%;
     width: 100%;
-    background-color: var(--royal-blue); 
-    border-color: var(--royal-blue);
+    background-color: var(--space-blue); 
+    border-color: var(--space-blue);
     position: absolute; 
     z-index: -1; 
     left: -10px; 
