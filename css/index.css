@@ -110,6 +110,10 @@ body {
     justify-content: center;
 }
 
+.barbottom {
+    border-bottom: 10px solid white;
+    display: inline-block;
+}
 
 .navbar-light .navbar-brand {
     color: #fff;
@@ -134,13 +138,13 @@ body {
     justify-content: center;
 }
 
-.intro-post-body .card-title {
-    font-size: 70px;
-    margin-bottom: 24px;
+.intro-post-body .cardy-title {
+    margin-bottom: 28px;
+    margin-top: 14px;
 }
 
-.intro-post-body .card-text {
-    font-size: 38px;
+.intro-post-body .cardy-text {
+    margin-bottom: 18px;
 }
 
 .about-me-img {
@@ -152,15 +156,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .intro-post-body .card-title {
-        font-size: 40px;
-        margin-bottom: 24px;
-    }
-
-    .intro-post-body .card-text {
-        font-size: 38px;
-    }
-
     .about-me-img {
         border-radius: 50%;
         height: 300px;
