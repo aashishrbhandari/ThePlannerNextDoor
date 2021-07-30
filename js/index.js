@@ -74,7 +74,7 @@ function setMyEvent() {
         fontStyleElement.innerHTML = `
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=${selectedFont}&display=swap'); 
-                body {font-family: ${selectedFont.replaceAll("+", " ")}, 'Inter', sans-serif;}
+                body {font-family: ${selectedFont.replaceAll("+", " ")}, 'STIX Two Text', sans-serif;}
             </style>`;
         if (selectedColor === "ERROR") {
             // Do Not Do Anything
