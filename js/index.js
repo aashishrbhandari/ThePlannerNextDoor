@@ -17,6 +17,77 @@ async function loadNavbar() {
 // Get Footer
 async function loadFooter() {
     document.querySelector(".footer-component").innerHTML = await (await fetch(thisLoc + '/footer.html')).text();
+    setMyEvent();
+}
+
+function checkColor(colorName) {
+
+    if (!colorName.startsWith("#")) {
+        colorName = "#" + colorName;
+    }
+
+    if (/^#([0-9A-F]{3}){1,2}$/i.test(colorName)) {
+        return colorName;
+    } else {
+        return "ERROR";
+    }
+
+}
+
+function checkFont(fontName) {
+    return fontName;
+}
+
+function setMyEvent() {
+
+    let chooserShower = document.querySelector("button.chooser-shower");
+    let chooser = document.querySelector("font-checker");
+    let changeFont = document.querySelector(".change-font");
+    let changeFontDefault = document.querySelector(".change-font-default");
+    let fontStyleElement = document.querySelector(".font-styler");
+    let root = document.documentElement;
+
+
+    chooserShower.addEventListener('click', function () {
+        let chooserList = chooser.classList;
+        if (chooserList.contains("active")) {
+            chooserList.remove("active");
+            this.textContent = "Show";
+        } else {
+            chooserList.add("active");
+            this.textContent = "Hide";
+        }
+    });
+    changeFont.addEventListener('click', function () {
+
+        let fontText = document.querySelector("#font-text");
+        let colorText = document.querySelector("#color-text");
+
+        selectedFont = fontText.value.replaceAll(" ", "+"); // No Escape Vul to Injection
+        selectedColor = colorText.value;  // No Escape Vul to Injection
+
+        selectedColor = checkColor(selectedColor);
+
+        console.log("selectedFont: ", selectedFont);
+        console.log("selectedColor: ", selectedColor);
+
+        fontStyleElement.innerHTML = `
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=${selectedFont}&display=swap'); 
+                body {font-family: ${selectedFont.replaceAll("+", " ")}, 'Inter', sans-serif;}
+            </style>`;
+        if (selectedColor === "ERROR") {
+            // Do Not Do Anything
+            return;
+        } else {
+            root.style.setProperty('--space-blue', selectedColor);
+        }
+    });
+
+    changeFontDefault.addEventListener('click', function () {
+        fontStyleElement.innerHTML = ``;
+        root.style.setProperty('--space-blue', '#1E2952');
+    });
 }
 
 function setActiveLink() {
@@ -82,3 +153,4 @@ slider.addEventListener('mousemove', (e) => {
 });
 
 /*** Image Slider [For Desktop] ENDS */
+

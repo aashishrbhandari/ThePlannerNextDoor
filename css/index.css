@@ -236,6 +236,13 @@ body {
     grid-row-gap: 20px;
 }
 
+.row-grid-340e-40g {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
 .row-grid-360e-20g {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -278,6 +285,23 @@ body {
     height: 245px;
     object-fit: cover;
 }
+
+/**** ***/
+
+font-checker {
+    position: fixed; 
+    top: 200px; 
+    right: -240px;
+    transition: right 0.5s;
+}
+
+font-checker.active {
+    right: 20px;
+}
+
+/**** ***/
+
+
 
 /*** Image Recent View Slider ******/
 
