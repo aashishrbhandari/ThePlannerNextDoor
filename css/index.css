@@ -229,6 +229,20 @@ body {
     grid-row-gap: 20px;
 }
 
+.row-grid-360e-40g {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.row-grid-360e-20g {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
 .card-img-overlay-bottom {
     position: absolute;
     /* top: 0; */
@@ -265,6 +279,46 @@ body {
     object-fit: cover;
 }
 
+/*** Image Recent View Slider ******/
+
+
+.img-slider-container {
+    min-width: 350px;
+    height: 300px;
+    padding: 0px 25px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.8rem;
+    user-select: none; /* User Cannot Select it*/
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.img-slider-container.active {
+    cursor: grabbing;
+}
+
+.img-slider-container img {
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+    transition: all 0.6s ease;
+}
+
+
+::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #000;
+    border-radius: 10px;
+}
+/*** Image Recent View Slider ENDS ******/
 
 /**************************** Whats App ********************************/
 

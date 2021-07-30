@@ -12,82 +12,33 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
 
-    <link rel="shortcut icon" type="image/jpg" href="images/event_planner.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="/images/event_planner.png"/>
 
     <title>ThePlannerNextDoor</title>
   </head>
   <body>
 
-    <header>
+    <header class="navbar-component">
 
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-rblue">
-            <div class="container">
-                <a class="navbar-brand" href="./index.html">
-                    <!-- The Planner Next Door -->
-                    THE PLANNER NEXT DOOR
-                    <!--
-                    <b>The</b>
-                    <img src="images/event_planner.png" style="width: 64px; height: 64px;" alt="">
-                    <b>Planner</b>
-                    <img src="images/nextdoor.png" style="width: 64px; height: 64px;" alt="">
-                    -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0;">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#our-services">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about-me.html">About Me</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Know About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./party1.html">La Casa De Papel</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="whatsapp-float-btn">
-            <a class="whatsapp-float-btn-icon text-white bg-dark shadow" style="display: flex; justify-content: center; align-items: center;" href="https://wa.me/send?phone=919833708425&amp;text=Hello" target="_blank">
-                <img src="images/whatsapp_space_blue.svg" width="70px" height="70px" alt="">
-            </a>
-            <a href="https://wa.me/send?phone=919833708425&amp;text=Hello" target="_blank" class="whatsapp-float-btn-text align-self-center p-2 shadow" style="background-color: azure; border-radius: 8px;margin-left: 4px; text-decoration: none;">
-                Contact Me? <strong>Chat directly..</strong>
-            </a>
-        </div>
-
+        
     </header>
 
     <main>
 
+        <!-- Intro Section -->
         <div class="intro-post bg-rblue">
             <div class="container">
                 <div class="intro-post-inner">
 
                     <div class="row g-0">
+                        <!-- <div class="col-md-8"> --> <!--When Image To left -->
                         <div class="col-md-12">
                             <div class="intro-post-body" style="padding: 40px 0px;">
                                 <div class="card-body">
                                     <center>
-                                        <img src="images/party.png" height="100" width="100" alt="">
+                                        <img src="/images/party.png" height="100" width="100" alt="">
                                         <div class="cardy-title h1">ThePlannerNextDoor</div>
                                         <div class="cardy-text h3">Let's plan your next event together.</div>
                                         
@@ -99,22 +50,24 @@
                         </div>
                         <!--
                         <div class="col-md-4">
-                            <img src="images/profile3_nobg.png" class="profile-img" style="width: 100%;" alt="...">
+                            <img src="/images/profile3_nobg.png" class="profile-img" style="width: 100%;" alt="...">
                         </div>
-                        -->
+                        --> <!--When Image To left -->
                     </div>
 
                 </div>
             </div>
         </div>
+        <!-- Intro Section Ends -->
 
+        <!-- About Me -->
         <div class="about-me" style="margin-top: 40px; margin-bottom: 40px; padding-bottom: 40px;">
             <div class="container">
                 <div class="about-me-inner">
 
                     <div class="row g-0" style="align-items: center;">
                         <div class="col-md-6" style="position: relative;">
-                            <img src="images/profile3.jpg" class="img-fluid about-me-img" style="border-radius: 50%;" width="420px" height="420px" alt="...">
+                            <img src="/images/profile3.jpg" class="img-fluid about-me-img" style="border-radius: 50%;" width="420px" height="420px" alt="...">
                             <div class="about-me-img bg-rblue" style="border-radius: 50%; position: absolute; top: 0px; right: 80px; z-index: -1;" width="420px" height="420px"></div>
                         </div>
                         <div class="col-md-6">
@@ -137,7 +90,9 @@
                 </div>
             </div>
         </div>
+        <!-- About Me Ends-->
 
+        <!-- Recent Images Slider -->
         <div id="our-recent-events" class="our-services-header bg-rblue" style="padding: 40px 0px; color: #fff;">
             <div class="container">
                 <div class="our-recent-events-header-inner">
@@ -149,40 +104,74 @@
         <div class="our-recent-events" style="padding: 40px 0px;">
             <div class="container">
                 <div class="our-recent-events-inner">
-                    
-                    <div class="row-grid">
+
+                    <div class="img-slider-container">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Marriage
+                                </div>
+                                <img src="/images/events/wedding/marriage1_phere_1_1.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Marriage
+                                </div>
+                                <img src="/images/events/wedding/marriage1_fun1.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Party
+                                </div>
+                                <img src="/images/events/parties/party1-la_casa_de_papel/3.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Party
+                                </div>
+                                <img src="/images/events/parties/party1-la_casa_de_papel/5.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Party
+                                </div>
+                                <img src="/images/events/parties/party1-la_casa_de_papel/6.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Event
+                                </div>
+                                <img src="/images/events/wedding/marriage1_recp1_3.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header bg-rblue text-white" style="position: absolute; left: -20px; top: 10px;">
+                                    #Event
+                                </div>
+                                <img src="/images/events/wedding/marriage1_recp1_1.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
                         
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/events/parties/party1-la_casa_de_papel/1.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/events/parties/party1-la_casa_de_papel/3.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/events/parties/party1-la_casa_de_papel/5.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="images/events/parties/party1-la_casa_de_papel/6.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
             </div>
         </div>
+        <!-- Recent Images Slider Ends -->
 
-
+        <!-- Our Services -->
         <div id="our-services" class="our-services-header bg-rblue" style="padding: 40px 0px; color: #fff;">
             <div class="container">
                 <div class="our-services-header-inner">
@@ -197,75 +186,75 @@
                     
                     <div>
 
-                        <div class="row-grid-nope row" data-masonry='{"percentPosition": true }'>
-                            <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="row-grid-360e-40g">
+                            <div class="col">
                                 <div class="holder1" style="position: relative;">
                                     <div class="card bg-dark text-white">
-                                        <img src="images/services/birthday1.jpg" class="card-img img-1" alt="...">
+                                        <img src="/images/services/birthday1.jpg" class="card-img img-1" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Birthday</span> </h2>
-                                            <button class="btn btn-rblue">Read More</button>
+                                            <a href="events/birthday.html" class="btn btn-rblue">Read More</a>
                                         </div>
                                     </div>
                                     <div class="color-shadow-left"></div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="col">
                                 <div class="holder1" style="position: relative;">
                                     <div class="card bg-dark text-white">
-                                        <img src="images/services/babyshower1.jpg" class="card-img-top" alt="...">
+                                        <img src="/images/services/babyshower1.jpg" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Baby Shower</span> </h2>
-                                            <button class="btn btn-rblue">Read More</button>
+                                            <a href="events/babyshower.html" class="btn btn-rblue">Read More</a>
                                         </div>
                                     </div>
                                     <div class="color-shadow-left"></div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="col">
                                 <div class="holder1" style="position: relative;">
                                     <div class="card bg-dark text-white">
-                                        <img src="images/services/anniversary1.jpg" class="card-img-top" alt="...">
+                                        <img src="/images/services/anniversary1.jpg" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Anniversaries</span> </h2>
-                                            <button class="btn btn-rblue">Read More</button>
+                                            <a href="events/anniversaries.html" class="btn btn-rblue">Read More</a>
                                         </div>
                                     </div>
                                     <div class="color-shadow-left"></div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="col">
                                 <div class="holder1" style="position: relative;">
                                     <div class="card bg-dark text-white">
-                                        <img src="images/services/proposals.jpg" class="card-img-top" alt="...">
+                                        <img src="/images/services/proposals.jpg" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Proposals</span> </h2>
-                                            <button class="btn btn-rblue">Read More</button>
+                                            <a href="events/proposals.html" class="btn btn-rblue">Read More</a>
                                         </div>
                                     </div>
                                     <div class="color-shadow-left"></div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="col">
                                 <div class="holder1" style="position: relative;">
                                     <div class="card bg-dark text-white">
-                                        <img src="images/personal_events1.jpg" class="card-img-top" alt="...">
+                                        <img src="/images/personal_events1.jpg" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Personal Events</span> </h2>
-                                            <button class="btn btn-rblue">Read More</button>
+                                            <a href="events/personal_events.html" class="btn btn-rblue">Read More</a>
                                         </div>
                                     </div>
                                     <div class="color-shadow-left"></div>
                                 </div>
                                 
                             </div>
-                            <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="col">
                                 <div class="holder1" style="position: relative;">
                                     <div class="card bg-dark text-white">
-                                        <img src="images/wedding1.png" class="card-img-top" alt="...">
+                                        <img src="/images/wedding1.png" class="card-img-top" alt="...">
                                         <div class="card-img-overlay-bottom">
                                             <h2 class="card-title"> <span class="badge bg-light" style="color: #000;">Weddings</span> </h2>
-                                            <button class="btn btn-rblue">Read More</button>
+                                            <a href="events/weddings.html" class="btn btn-rblue">Read More</a>
                                         </div>
                                     </div>
                                     <div class="color-shadow-left"></div>
@@ -277,64 +266,20 @@
                 </div>
             </div>
         </div>
-
+        <!-- Our Services Ends -->
 
     </main>
 
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row align-items-center g-0 border-top py-2">
-                    <!-- Desc -->
-                    <div class="col-md-4 col-12 text-center text-md-start">
-                        <span>© 2021 ThePlannerNextDoor. All Rights Reserved.</span>
-                    </div>
-                    <!-- Links -->
-                    <div class="col-12 col-md-8">
-                        <nav class="nav nav-footer justify-content-left justify-content-md-end">
-                            <a class="nav-link active ps-0" href="#">Privacy</a>
-                            <a class="nav-link" href="#">Terms </a>
-                            <a class="nav-link" href="#">Feedback</a>
-                            <a class="nav-link" href="#">Support</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <modal-setup>
-
-            <div class="modal fade" id="show-left-todo" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalPopoversLabel">🔥</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border-radius: 50%; background-color: #f1f1f1; border: 1px solid #6e6868;" ></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                Connect with Me Directly
-                            </p>
-                            <h5>Stay Tuned We will be updating alot of things here.</h5>
-                            <a href="https://wa.me/send?phone=000000000000&amp;text=Hello" class="btn btn-rblue text-white" target="_blank">@WhatsApp</a> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">
-                Test Modal Working
-            </button>
-            -->
-
-        </modal-setup>
+    <footer class="footer-component">
+        
 
     </footer>
     
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="/js/index.js"></script>
 
     <!-- Custom Script -->
     <script>
